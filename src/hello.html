@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="hello">
+    <h1>{{ msg }}</h1>
+    <button @click="go">点我跳转</button>
+</div>
+<script>
+    export default {
+        name: 'HelloWorld',
+        data () {
+            return {
+                msg: '哈哈'
+            }
+        },
+        methods:{
+            go(){
+                this.$router.push('/aaa')
+            }
+        }
+    }
+</script>
+</body>
+</html>

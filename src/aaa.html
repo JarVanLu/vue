@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>我是aaa
+    <button @click="back">点我返回</button>
+</div>
+<script>
+    export default {
+        name: 'aaa',
+        /*data () {
+          return {
+            msg: '哈哈'
+          }
+        },*/
+        methods:{
+            back(){
+                this.$router.push('/')
+            }
+        }
+    }
+</script>
+</body>
+</html>
